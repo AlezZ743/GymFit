@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+h1, h2{
+    font-family: 'Cal Sans';
+    letter-spacing: 10px;
+}
+
 /* Pagina Contacto*/
 .contacto {
     height: 395px;
@@ -106,21 +111,35 @@
     max-width: 520px;
 }
 
+.black{
+    color: black;
+}
+
 /* Estilo para el textarea */
 .formulario-contacto textarea {
     resize: vertical;
     min-height: 100px;
 }
 
-/* Estilo para el checkbox */
-.formulario-contacto input[type="checkbox"] {
-    margin-right: 10px;
-}
 
 /* Estilo para la etiqueta del checkbox */
 .formulario-contacto label[for="acepta"] {
     font-size: 14px;
     color: black;
+}
+
+/*Estilo para texto y checkbox*/
+
+.inline{
+    display: inline;
+}
+
+#check{
+    position: relative;
+    left: 0;
+    width: auto;
+    margin-right: 10%;
+    margin: 2%;
 }
 
 /* Estilo para el botón "Enviar" */

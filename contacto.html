@@ -78,10 +78,11 @@
                     <label for="asunto">Asunto</label>
                     <select id="motivo" name="motivo" required>
                         <option value="" disabled selected>Selecciona una opción</option>
-                        <option value="El gordo"> Gimnasio El gordo</option>
-                        <option value="Villapene"> Gimnasio Villapene</option>
-                        <option value="Guarromán"> Gimnasio Guarromán</option>
-                        <option value="Parderrubias"> Gimnasio Parderrubias</option>
+                        <option class="black" value="El gordo"> Gimnasio El gordo</option>
+                        <option class="black" value="Villapene"> Gimnasio Villapene</option>
+                        <option class="black" value="Guarromán"> Gimnasio Guarromán</option>
+                        <option class="black" value="Parderrubias"> Gimnasio Parderrubias
+                        </option>
                     </select>
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
@@ -91,9 +92,11 @@
                     <input type="email" id="email" name="email" required>
                     <label for="mensaje">Comentarios</label>
                     <textarea id="mensaje" name="comentario" rows="4" required></textarea>
-                    <input type="checkbox" name="acepta" required>
-                    <label for="checkbox">Acepto la política de privacidad</label>
-    
+
+                    <div class="inline">
+                        <input id="check" type="checkbox" name="acepta" required>
+                        <label for="checkbox">Acepto la política de privacidad</label>
+                    </div>    
                     <button type="submit">Enviar</button>
                 </form>
             </div>
