@@ -19,3 +19,4 @@ $(document).ready(function() {
         verImagen(puntero);
     });
 });
+//*565465465
