@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gimnasio</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/nav.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
@@ -15,7 +16,43 @@
     <header>
         <!-- ESPACIO PARA MENU Y LOGO  -->
         <nav class="menu_navegador">
-
+            <button type="button" id="boton">
+                <svg class="hamburguesa" height="30" viewBox="0 0 40 30" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="line arriba" y="0" width="40" height="4" rx="2" />
+                    <rect class="line medio" y="13" width="40" height="4" rx="2" />
+                    <rect class="line abajo" y="26" width="40" height="4" rx="2" />
+                  </svg>
+            </button>
+        
+            <div class="dropdown">
+                <div class="dropin">
+                    <h2 id="nav_menu">
+                        Menú
+                    </h2>
+        
+                    <div class="sub_menu">
+                        <a href="" class="linea_anim">Inicio</a>
+                        <br>
+                        <br>
+                        <a href="" class="linea_anim">Únete</a>
+                        <br>
+                        <br>
+                        <a href="" class="linea_anim">Nuestros Servicios</a>
+                        <br>
+                        <br>
+                        <a href="" class="linea_anim">Creador de entrenamientos</a>
+                        <!-- Añadir tag de Nuevo -->
+                        <br>
+                        <br>
+                        <a href="" class="linea_anim">Sobre Nosotros</a>
+                        <br>
+                        <br>
+                        <a href="" class="linea_anim">Contacto</a>
+                    </div>
+        
+        
+                </div>
+            </div>
         </nav>
         <!-- FIN ESPACIO PARA MENU Y LOGO -->
 
@@ -29,7 +66,7 @@
                     <img src="imagenes/portada6.jpg" alt="Imagen 6">
                 </div>
                 <button class="previo">❮</button>
-                <button class="siguiente">❯</button>        
+                <button class="siguiente">❯</button>
             </div>
 
             <div class="texto">
@@ -38,24 +75,61 @@
                 <button class="enlace">
                     <h2>Ver mas</h2>
                 </button>
-            </div>    
+            </div>
         </section>
         <!-- ----------------------------------------------- FIN TEXT-HERO ------------------------------------------------ -->
 
     </header>
 
     <main>
-
+      
     </main>
 
     <aside>
 
     </aside>
 
-    <footer>
+    <footer class="footer">
+        <!-- Barra superior con iconos -->
+        <div class="footer-top">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
 
+        <!-- Contenido principal del footer (una sola lista) -->
+        <ul class="footer-list">
+            <li><a href="#">Trabaja con nosotros</a></li>
+            <li><a href="#">Primeros pasos</a></li>
+            <li><a href="#">Prueba un día</a></li>
+            <li><a href="#">FAQ - Preguntas frecuentes</a></li>
+            <li><a href="#">DF sostenible</a></li>
+            <li><a href="#">Contáctanos</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Aviso legal</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Política de cookies</a></li>
+            <li><a href="#">Canal denuncias</a></li>
+        </ul>
+
+        <!-- Pie inferior con derechos de autor -->
+        <div class="footer-bottom">
+            <p>© Dreamfit 2025 | Desarrollo web dinámico</p>
+        </div>
     </footer>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    
+    <script src="./js/nav.js"></script>
 </body>
 
 </html>
