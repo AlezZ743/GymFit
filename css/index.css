@@ -75,3 +75,112 @@ button.siguiente {
 }
 
 /* ------------------------------------- FIN ESTILOS TEXT-HERO Y CARRUSEL */
+
+.grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .grid-item {
+    position: relative;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .grid-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .grid-item a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .overlay h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .overlay p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .grid-section {
+      grid-template-columns: 1fr;
+    }
+    /* colores generales */
+  }
+  h1, h2, h3{
+    text-align: center;
+  }
+  
+  h1{
+    color:#edcd45
+    }
+  h2{
+    color:#636363
+  }
+  
+  
+  h3{
+    color: #ebb235
+    }
+  
+  p, h4{
+    color: white;
+  }
+  /* Contenido principal del footer */
+  .footer-list {
+    list-style: none;
+    padding: 30px 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:40px;
+    padding-left: 300px;
+  }
+  
+  .footer-list li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-list li a:hover {
+    color: #97c600;
+  }
+  
+  /* Pie inferior con derechos de autor */
+  .footer-bottom {
+    background-color: #000;
+    text-align: center;
+    padding: 10px 0;
+    color: gray;
+  }
+  
