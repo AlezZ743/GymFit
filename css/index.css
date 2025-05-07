@@ -134,6 +134,7 @@ button.siguiente {
     .grid-section {
       grid-template-columns: 1fr;
     }
+    /* fin del responsive */
     /* colores generales */
   }
   h1, h2, h3{
@@ -155,6 +156,7 @@ button.siguiente {
   p, h4{
     color: white;
   }
+  /* fin de los colores genrales */
   /* Contenido principal del footer */
   .footer-list {
     list-style: none;
@@ -175,7 +177,7 @@ button.siguiente {
   .footer-list li a:hover {
     color: #97c600;
   }
-  
+  /* fin del contenido principal del footer*/
   /* Pie inferior con derechos de autor */
   .footer-bottom {
     background-color: #000;
@@ -183,4 +185,4 @@ button.siguiente {
     padding: 10px 0;
     color: gray;
   }
-  
+  /*fin del pie derecho del autor*/
