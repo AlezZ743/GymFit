@@ -8,7 +8,7 @@
     height: 395px;
 }
 .hero {
-    width: 100%;
+
     height: 100%;
     background-image: url('imagenes de prueba/contactar-img-ppal2.jpg');
     background-size: cover;
@@ -45,7 +45,7 @@
     height: 1200px;
 }
 .hero-formulario{
-    width: 100%;
+
     height: 100%;
     background-image: url('imagenes de prueba/contactar-formulario-bg2.jpg');
     background-size: cover;
