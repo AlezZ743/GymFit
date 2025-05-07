@@ -13,6 +13,7 @@ body {
     background-color: #f0f0f0;*/
 }
 
+/* ---------------------------------------------------- ESTILOS TEXT-HERO Y CARRUSEL */
 .text-hero{
     display:flex;
 }
@@ -72,3 +73,5 @@ button.siguiente {
     position: absolute;
     top: 20%;
 }
+
+/* ------------------------------------- FIN ESTILOS TEXT-HERO Y CARRUSEL */
