@@ -259,6 +259,32 @@
     justify-content: flex-start;
     padding-left: 300px;
 }
-.hero-text-unicos{
 
+
+/* ------------------------------------------------------- PAGINA SERVICIOS */
+
+.main-servicios *{
+    margin: 0px;
+    padding: 0px;
 }
+
+.main-servicios .hero-mensaje{
+    align-items: center;
+    height: auto;
+    padding: 8%;
+}
+
+.main-servicios .hero-text-mensaje h1{
+    text-align: center;
+    padding: 2%;
+}
+
+.main-servicios .contenido{
+    padding: 2%;
+    text-align: center;
+}
+
+.main-servicios .contenido .fotitos img{
+    width: 100%;
+}
+
