@@ -201,7 +201,7 @@
 /*Pagina sobre nosotros*/
 
 .somos {
-    height: 800px;
+    height: 600px;
 }
 .hero-somos{
     height: 100%;
@@ -224,7 +224,7 @@
     margin: 0;
 }
 .nosotros{
-    height: 360px;
+    height: 460px;
 }
 .hero-nosotros{
     width: 100%;
@@ -238,7 +238,24 @@
 }
 .hero-text-nosotros p{
     color:black;
-    font-size: 50px;
+    font-size: 18px;
     text-align: center;
-    padding-top: 100px;
+    line-height: 26px;
+    margin: 10px 0;
+}
+.unicos{
+    height: 395px;
+}
+.hero-unicos{
+    background-image: url('/imagenes de prueba/conocenos-unicos-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 300px;
+}
+.hero-text-unicos{
+
 }
