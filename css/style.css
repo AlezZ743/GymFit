@@ -213,7 +213,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 28%;
+    padding-left: 300px;
 }
 
 .unicos{
@@ -263,6 +263,25 @@
 
 
 /* ----------------------------------------------------------------- PAGINA SERVICIOS */
+
+/* ------------------------------------------------------ HEADER */
+
+.header-servicios .somos {
+    height: 600px;
+}
+
+.header-servicios .hero-somos{
+    height: 100%;
+    background-image: url('../imagenes\ de\ prueba/conocenos-img-ppal.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 28%;
+}
+
 
 /* ------------------------------------------------------- MAIN */
 .main-servicios *{
