@@ -125,8 +125,8 @@
 
 /* Estilo para el botón "Enviar" */
 .formulario-contacto button {
-    background-color: green;
-    color: white;
+    background-color: #ebb235;
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -140,7 +140,7 @@
 
 /* Efecto hover para el botón */
 .formulario-contacto button:hover {
-    background-color: darkgreen;
+    background-color: #ebb235;
 }
 /* Estilos generales del footer */
 .footer {
@@ -154,7 +154,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid #97c600;
+    border-bottom: 2px solid #ebb235;
     padding: 15px 0;
 }
 
@@ -187,7 +187,7 @@
 }
 
 .footer-list li a:hover {
-    color: #97c600;
+    color: #ebb235;
 }
 
 /* Pie inferior con derechos de autor */
@@ -259,6 +259,32 @@
     justify-content: flex-start;
     padding-left: 300px;
 }
-.hero-text-unicos{
 
+
+/* ------------------------------------------------------- PAGINA SERVICIOS */
+
+.main-servicios *{
+    margin: 0px;
+    padding: 0px;
 }
+
+.main-servicios .hero-mensaje{
+    align-items: center;
+    height: auto;
+    padding: 8%;
+}
+
+.main-servicios .hero-text-mensaje h1{
+    text-align: center;
+    padding: 2%;
+}
+
+.main-servicios .contenido{
+    padding: 2%;
+    text-align: center;
+}
+
+.main-servicios .contenido .fotitos img{
+    width: 100%;
+}
+
