@@ -1,15 +1,11 @@
-$(document).ready(function(){
-    console.log("funciona");
-
-
-});
-
 // Barra de Navegación
 
 let isOpen = false;
 
 $('#boton').click(function () {
     const dropdown = $(".dropdown");
+
+    console.log("esto funciona");
 
     if (isOpen) {
         gsap.to(dropdown, {
@@ -54,6 +50,7 @@ $('#boton').click(function () {
 const hamburguesa = document.querySelector('.hamburguesa');
 
 hamburguesa.addEventListener('click', () => {
+  
     gsap.fromTo(hamburguesa, 
       { rotation: 0 }, 
       {
@@ -65,6 +62,9 @@ hamburguesa.addEventListener('click', () => {
   });
 
   hamburguesa.addEventListener('mouseenter', () => {
+
+
+
     floatAnim = gsap.to(hamburguesa, {
       y: -5,              
       duration: 0.5,
