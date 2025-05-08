@@ -42,7 +42,13 @@ h1, h2{
 #titulo{
   font-family: "Bebas Neue";
   font-size: 150px;
-  width:25%;
+  width:50%;
+}
+
+#subtitulo{
+  font-family: "Bebas Neue";
+  font-size: 15px;
+  color: #fff;
 }
 
 /* ---------------------------------------------------- ESTILOS TEXT-HERO Y CARRUSEL */
@@ -106,7 +112,24 @@ button.siguiente {
     top: 20%;
 }
 
+.subtexto{
+  margin-block: 2%;
+}
+
+.cont_subtexto{
+  width: 80%;
+  margin:auto;
+  margin-bottom:8%;
+}
+
 /* ------------------------------------- FIN ESTILOS TEXT-HERO Y CARRUSEL */
+
+.custom-block-home-paddings{
+    padding-top: 20px;
+    background-image: url('/imagenes/lines.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 
 .grid-section {
     display: grid;
@@ -207,7 +230,7 @@ button.siguiente {
   }
   
   .footer-list li a:hover {
-    color: #97c600;
+    color: #ebb235;
   }
   /* fin del contenido principal del footer*/
   /* Pie inferior con derechos de autor */
