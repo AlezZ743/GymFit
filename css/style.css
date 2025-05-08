@@ -154,7 +154,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid #97c600;
+    border-bottom: 2px solid #ebb235;
     padding: 15px 0;
 }
 
@@ -187,7 +187,7 @@
 }
 
 .footer-list li a:hover {
-    color: #97c600;
+    color: #ebb235;
 }
 
 /* Pie inferior con derechos de autor */
