@@ -30,7 +30,7 @@ h1, h2{
 }
 
 #titulo{
-    font-family: "Bebeas Neue";
+    font-family: "Bebas Neue";
     font-size: 50px;
 }
 
@@ -104,6 +104,14 @@ h1, h2{
 }
 
 /* Estilo para los labels */
+
+label, input, select, textarea {
+    font-family: 'Cal Sans';
+    letter-spacing: 2px;
+    color: white;
+    font-size: 20px;
+}
+
 .formulario-contacto label {
     font-weight: bold;
     color: white;
@@ -171,8 +179,8 @@ h1, h2{
 
 /* Estilo para el botón "Enviar" */
 .formulario-contacto button {
-    background-color: green;
-    color: white;
+    background-color: #ebb235;
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -186,7 +194,7 @@ h1, h2{
 
 /* Efecto hover para el botón */
 .formulario-contacto button:hover {
-    background-color: darkgreen;
+    background-color: #ebb235;
 }
 /* Estilos generales del footer */
 .footer {
@@ -200,7 +208,7 @@ h1, h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid #97c600;
+    border-bottom: 2px solid #ebb235;
     padding: 15px 0;
 }
 
@@ -233,7 +241,7 @@ h1, h2{
 }
 
 .footer-list li a:hover {
-    color: #97c600;
+    color: #ebb235;
 }
 
 /* Pie inferior con derechos de autor */
