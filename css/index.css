@@ -13,6 +13,37 @@ body {
     background-color: #f0f0f0;*/
 }
 
+/*Fuentes*/
+
+@font-face {
+  font-family: 'Cal Sans';
+  src: url('/fonts/CalSans-Regular.woff2') format('woff2'),
+      url('/fonts/CalSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('/fonts/BebasNeue-Regular.woff2') format('woff2'),
+      url('/fonts/BebasNeue-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*Estilos para títulos*/
+h1, h2{
+  font-family: 'Cal Sans';
+  letter-spacing: 10px;
+}
+
+#titulo{
+  font-family: "Bebeas Neue";
+  font-size: 50px;
+}
+
 /* ---------------------------------------------------- ESTILOS TEXT-HERO Y CARRUSEL */
 .text-hero{
     display:flex;
