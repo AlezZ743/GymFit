@@ -41,7 +41,7 @@ h1, h2{
 .hero {
 
     height: 100%;
-    background-image: url('imagenes de prueba/contactar-img-ppal2.jpg');
+    background-image: url('imagenes/banner.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -72,6 +72,16 @@ h1, h2{
     text-align: center;
     padding-top: 100px;
 }
+
+.ask{
+    font-family: 'Cal Sans';
+    letter-spacing: 2px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 50px;
+}
+
 .formulario{
     height: 1200px;
 }
@@ -105,12 +115,16 @@ h1, h2{
 
 /* Estilo para los labels */
 
-label, input, select, textarea {
+label, input, select, textarea, button {
     font-family: 'Cal Sans';
     letter-spacing: 2px;
     color: white;
     font-size: 20px;
 }
+
+input[type="checkbox"] {
+    accent-color: #ebb235; /* Or any color you like */
+  }
 
 .formulario-contacto label {
     font-weight: bold;
