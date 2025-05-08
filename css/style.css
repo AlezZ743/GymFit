@@ -10,7 +10,7 @@
 .hero {
     width: 100%;
     height: 100%;
-    background-image: url('../imagenes\ de\ prueba/contactar-formulario-bg2');  /*url('../imagenes de prueba/contactar-img-ppal2.jpg');*/
+    background-image: url('../imagenes\ de\ prueba/contactar-formulario-bg2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -47,7 +47,7 @@
 .hero-formulario{
     width: 100%;
     height: 100%;
-    background-image: url('../imagenes\ de\ prueba/contactar-formulario-bg2');  /*'../imagenes de prueba/contactar-formulario-bg2.jpg');*/
+    background-image: url('../imagenes\ de\ prueba/contactar-formulario-bg2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -201,11 +201,11 @@
 /*Pagina sobre nosotros*/
 
 .somos {
-    height: 800px;
+    height: 600px;
 }
 .hero-somos{
     height: 100%;
-    background-image: url('../imagenes de prueba/conocenos-img-ppal.jpg');
+    background-image: url('../imagenes\ de\ prueba/conocenos-img-ppal.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -213,7 +213,10 @@
     align-items: center;
     justify-content: flex-start;
     padding-left: 300px;
-    
+}
+
+.unicos{
+    background-image: url('../imagenes\ de\ prueba/conocenos-img-ppal.jpg'); /*('../imagenes de prueba/conocenos-img-ppal.jpg');*/
 }
 
 .hero-text-somos h1 {
@@ -224,7 +227,7 @@
     margin: 0;
 }
 .nosotros{
-    height: 360px;
+    height: 460px;
 }
 .hero-nosotros{
     width: 100%;
@@ -238,7 +241,24 @@
 }
 .hero-text-nosotros p{
     color:black;
-    font-size: 50px;
+    font-size: 18px;
     text-align: center;
-    padding-top: 100px;
+    line-height: 26px;
+    margin: 10px 0;
+}
+.unicos{
+    height: 395px;
+}
+.hero-unicos{
+    background-image: url('../imagenes\ de\ prueba/conocenos-unicos-bg.jpg'); /*('/imagenes de prueba/conocenos-unicos-bg.jpg');*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 300px;
+}
+.hero-text-unicos{
+
 }
