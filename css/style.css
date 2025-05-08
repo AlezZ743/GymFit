@@ -238,6 +238,12 @@
     align-items: center;
     justify-content: flex-start;
     padding-left: 300px;
+
+
+}
+
+.unicos{
+    background-image: url('../imagenes\ de\ prueba/conocenos-img-ppal.jpg'); /*('../imagenes de prueba/conocenos-img-ppal.jpg');*/
 }
 
 .hero-text-somos h1 {
