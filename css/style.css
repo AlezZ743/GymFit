@@ -125,8 +125,8 @@
 
 /* Estilo para el botón "Enviar" */
 .formulario-contacto button {
-    background-color: green;
-    color: white;
+    background-color: #ebb235;
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -140,7 +140,7 @@
 
 /* Efecto hover para el botón */
 .formulario-contacto button:hover {
-    background-color: darkgreen;
+    background-color: #ebb235;
 }
 /* Estilos generales del footer */
 .footer {
@@ -154,7 +154,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 2px solid #97c600;
+    border-bottom: 2px solid #ebb235;
     padding: 15px 0;
 }
 
@@ -187,7 +187,7 @@
 }
 
 .footer-list li a:hover {
-    color: #97c600;
+    color: #ebb235;
 }
 
 /* Pie inferior con derechos de autor */
@@ -203,6 +203,7 @@
 .somos {
     height: 600px;
 }
+
 .hero-somos{
     height: 100%;
     background-image: url('../imagenes\ de\ prueba/conocenos-img-ppal.jpg');
@@ -273,6 +274,13 @@
     padding-bottom: 50px;
 
 }
+/* ----------------------------------------------------------------- PAGINA SERVICIOS */
+
+/* ------------------------------------------------------- MAIN */
+.main-servicios *{
+    margin: 0px;
+    padding: 0px;
+}
 .decides p {
     margin-bottom: 20px;
 }
@@ -284,4 +292,16 @@
 
 .decides li {
     margin-bottom: 10px;
+}
+.proposito{
+    height: 460px;
+}
+.hero-proposito{
+    height: 100%;
+}
+.hero-text-proposito h1{
+    color:black;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 200px;
 }
