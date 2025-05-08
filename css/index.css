@@ -40,13 +40,13 @@ h1, h2{
 }
 
 #titulo{
-  font-family: "Bebas Neue";
+  /*font-family: "Bebas Neue";*/
   font-size: 150px;
   width:50%;
 }
 
 #subtitulo{
-  font-family: "Bebas Neue";
+  /*font-family: "Bebas Neue";*/
   font-size: 15px;
   color: #fff;
 }
