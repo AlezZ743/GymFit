@@ -125,8 +125,8 @@
 
 /* Estilo para el botón "Enviar" */
 .formulario-contacto button {
-    background-color: green;
-    color: white;
+    background-color: #ebb235;
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -140,7 +140,7 @@
 
 /* Efecto hover para el botón */
 .formulario-contacto button:hover {
-    background-color: darkgreen;
+    background-color: #ebb235;
 }
 /* Estilos generales del footer */
 .footer {
