@@ -12,6 +12,15 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('/fonts/BebasNeue-Regular.woff2') format('woff2'),
+        url('/fonts/BebasNeue-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 #nav_menu{
     font-family: 'Cal Sans';
     letter-spacing: 5px;
@@ -20,6 +29,7 @@
     margin-left: 7%;
     margin-top: 3%;
     cursor: default;
+    text-align: left;
 }
 
 .sub_menu{
@@ -88,7 +98,7 @@
 }
 
 .hamburguesa .line {
-    fill: #23221e;
+    fill: whitesmoke;
     transition: all 0.3s ease;
   }
 
