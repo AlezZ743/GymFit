@@ -3,9 +3,35 @@
     margin: 0;
 }
 
+/*Fuentes*/
+
+@font-face {
+    font-family: 'Cal Sans';
+    src: url('/fonts/CalSans-Regular.woff2') format('woff2'),
+        url('/fonts/CalSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('/fonts/BebasNeue-Regular.woff2') format('woff2'),
+        url('/fonts/BebasNeue-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*Estilos para títulos*/
 h1, h2{
     font-family: 'Cal Sans';
     letter-spacing: 10px;
+}
+
+#titulo{
+    font-family: "Bebeas Neue";
+    font-size: 50px;
 }
 
 /* Pagina Contacto*/
@@ -49,6 +75,7 @@ h1, h2{
 .formulario{
     height: 1200px;
 }
+
 .hero-formulario{
 
     height: 100%;
@@ -223,7 +250,6 @@ h1, h2{
     height: 800px;
 }
 .hero-somos{
-    width: 100%;
     height: 100%;
     background-image: url('imagenes de prueba/conocenos-img-ppal.jpg');
     background-size: cover;
