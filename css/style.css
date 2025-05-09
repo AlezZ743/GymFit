@@ -183,10 +183,8 @@
 }
 
 .social-icons-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    justify-content: center;
+    display: flex;
+    gap: 20px; 
 }
 
 .social-icons-grid a {
@@ -245,9 +243,11 @@
 /* Pie inferior con derechos de autor */
 .footer-bottom {
     background-color: #000;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
     padding: 10px 0;
-    color: gray;
 }
 
 /*Pagina sobre nosotros*/
