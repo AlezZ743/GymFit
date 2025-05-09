@@ -382,3 +382,60 @@
     text-align: center;
     padding-top: 200px;
 }
+
+.estilo1{
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.estilo1 .textito{
+    margin: auto;
+    margin-left: 8%;
+    padding: 8px;
+}
+
+.estilo1 .fotitos{
+    margin: auto;
+    padding: 8px;
+}
+
+.estilo1 .fotitos img{
+    width: 100%;
+}
+
+.estilo1 p{
+    font-size: 120%;
+}
+
+
+.estilo2{
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+.estilo2 .textito{
+    margin: auto;
+    margin-right: 8%;
+    padding: 8px;
+}
+
+.estilo2 .fotitos{
+    margin: auto;
+    padding: 8px;
+}
+
+.estilo2 .fotitos img{
+    width: 100%;
+}
+
+.estilo2 p{
+    font-size: 120%;
+}
