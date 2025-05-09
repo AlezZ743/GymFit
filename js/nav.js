@@ -83,14 +83,29 @@ hamburguesa.addEventListener('click', () => {
 //Animaciones enlaces
 
 const links = document.querySelectorAll(".linea_anim");
+const iconos = document.querySelectorAll(".icon");
 
 links.forEach(link => {
   link.addEventListener("mouseenter", () => {
     gsap.to(link, {
       "--underline-scale": 1,
       duration: 0.2,
-      ease: "power2.out"
+      ease: "power2.out",
     });
+
+    // Selecciona el icono dentro del enlace actual
+
+    iconos.forEach(icono => {
+      icono.style.transform = "scale(1.2)";
+    }
+
+    if (icono) {
+      gsap.to(icono, {
+        scale: 1.2,
+        duration: 0.3,
+        ease: "power2.out"
+      });
+    }
   });
 
   link.addEventListener("mouseleave", () => {
@@ -99,7 +114,38 @@ links.forEach(link => {
       duration: 0.2,
       ease: "power2.in"
     });
+
+    // Restaura el icono dentro del enlace actual
+    const icono = link.querySelector(".icon");
+    if (icono) {
+      gsap.to(icono, {
+        scale: 1,
+        duration: 0.3,
+        ease: "power2.in"
+      });
+    }
   });
 });
 
+
+//Animaciones iconos
+// const iconos = document.querySelectorAll(".icon");
+
+// iconos.forEach(icono => {
+//   icono.addEventListener("mouseenter", () => {
+//     gsap.to(icono, {
+//       scale: 1.2,
+//       duration: 0.3,
+//       ease: "power2.out"
+//     });
+//   });
+
+//   icono.addEventListener("mouseleave", () => {
+//     gsap.to(icono, {
+//       scale: 1,
+//       duration: 0.3,
+//       ease: "power2.in"
+//     });
+//   });
+// });
 
