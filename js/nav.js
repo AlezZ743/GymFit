@@ -20,7 +20,7 @@ $('#boton').click(function () {
         }),
         
         gsap.to(".hamburguesa rect", {
-            fill: "white",
+            fill: "#ebb235",
             duration: 0.35
 
         })
@@ -38,7 +38,7 @@ $('#boton').click(function () {
         }),
 
         gsap.to(".hamburguesa rect", {
-            fill: "#ebb235",
+            fill: "white",
             duration: 0.35
 
         })
