@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fullscreen Dropdown with GSAP</title>
+    <link rel="stylesheet" href="./nav.css" />
+
+</head>
+
+<body>
+    <button type="button" id="boton">
+        <svg class="hamburguesa" height="30" viewBox="0 0 40 30" xmlns="http://www.w3.org/2000/svg">
+            <rect class="line arriba" y="0" width="40" height="4" rx="2" />
+            <rect class="line medio" y="13" width="40" height="4" rx="2" />
+            <rect class="line abajo" y="26" width="40" height="4" rx="2" />
+        </svg>
+    </button>
+
+    <div class="dropdown">
+        <div class="dropin">
+            <h2 id="nav_menu">
+                Menú
+            </h2>
+
+                <div class="menu_item  margin_top">
+                    <img class="icon" src="./005-home.png" alt="Casita">
+                    <a href="index.html" class="linea_anim">Inicio</a>
+                </div>
+                <br>
+                <br>
+                <div class="menu_item">
+                    <img class="icon" src="./008-add-friend.png" alt="Unete">
+                    <a href="contacto.html" class="linea_anim">Únete</a>
+                </div>
+                
+                <br>
+                <br>
+
+                <div class="menu_item">
+                    <img class="icon" src="./004-weights.png" alt="Servicios">
+                    <a href="Servicios.html" class="linea_anim">Nuestros Servicios</a>
+                </div>
+
+                <br>
+                <br>
+                <div class="menu_item">
+                    <img class="icon" src="./001-muscle.png" alt="Creador de entrenamientos">
+                    <a href="" class="linea_anim">Creador de entrenamientos</a>
+                </div>
+                <!-- Añadir tag de Nuevo -->
+                <br>
+                <br>
+
+                <div class="menu_item">
+                    <img class="icon" src="./009-info.png" alt="Sobre Nosotros">
+                    <a href="" class="linea_anim">Sobre Nosotros</a>
+                </div>
+                <br>
+                <br>
+                <div class="menu_item">
+                    <img class="icon" src="./007-email.png" alt="Contacto">
+                    <a href="" class="linea_anim">Contacto</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+  
+  <script src="./nav.js"></script>
+
+</body>
+
+</html>

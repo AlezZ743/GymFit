@@ -98,7 +98,6 @@ links.forEach(link => {
 
       const iconos = document.querySelectorAll(".icon");
       console.log(iconos);
-
         iconos.forEach(icono => {
         icono.addEventListener("mouseenter", () => {
         gsap.to(icono, {
@@ -106,19 +105,16 @@ links.forEach(link => {
           duration: 0.3,
           ease: "power2.out"
         });
+
       });
-    });
 
-
-links.forEach(link => {
-  links.addEventListener("mouseleave", () => {
-    gsap.to(links, {
+  link.addEventListener("mouseleave", () => {
+    gsap.to(link, {
       "--underline-scale": 0,
       duration: 0.2,
       ease: "power2.in"
     });
-  });
-  
+
     // Restaura el tamaño del icono dentro del enlace actual
     const icono = link.querySelector(".icon");
     if (icono) {
@@ -129,7 +125,7 @@ links.forEach(link => {
       });
     }
   });
-
+});
 
 
 //Animaciones iconos
