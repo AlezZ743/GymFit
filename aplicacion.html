@@ -54,16 +54,16 @@
     </header>
 
     <main class="aplicacion-main">
-        <article class="hero-text">
+        <article class="text-hero hero-text">
             <h1>Entrenamiento Personalizado</h1>
         </article>
 
         <article class="app-entrenamiento">
             <section class="edad">
-                <label for="respuestas">
+                <label for="edad-seleccion">
                     <h3>Edad:</h3>
                 </label>
-                <select id="respuestas">
+                <select id="edad-seleccion">
                 </select>
             </section>
 
@@ -72,12 +72,24 @@
                     <h3>Género</h3>
                 </label>
                 <select id="genero-seleccion">
-                    <option selected><p>Mujer</p></option>
-                    <option><p>Hombre</p></option>
-                    <option><p>Trans Hombre</p></option>
-                    <option><p>Trans Mujer</p></option>
-                    <option><p>No Binario</p></option>
-                    <option><p>Indeterminado</p></option>
+                    <option selected>
+                        <p>Mujer</p>
+                    </option>
+                    <option>
+                        <p>Hombre</p>
+                    </option>
+                    <option>
+                        <p>Trans Hombre</p>
+                    </option>
+                    <option>
+                        <p>Trans Mujer</p>
+                    </option>
+                    <option>
+                        <p>No Binario</p>
+                    </option>
+                    <option>
+                        <p>Indeterminado</p>
+                    </option>
                 </select>
             </section>
 
@@ -86,7 +98,9 @@
                     <h3>Objetivo del Entrenamiento: </h3>
                 </label>
                 <select id="objetivo-seleccion">
-                    <option selected><p>Quema Grasa</p></option>
+                    <option selected>
+                        <p>Quema Grasa</p>
+                    </option>
                     <option value="">
                         <p>Operacion bikini</p>
                     </option>
@@ -102,12 +116,19 @@
                 </select>
             </section>
 
-            <div id="btnSiguiente">
-                <button><h2>Siguiente</h2></button>
-            </div>
+            <div id="btnBotonera">
+                <div id="btnAtras">
+                    <button>
+                        <h2>Atras</h2>
+                    </button>
+                </div>
 
-            <div id="btnAtras">
-                <button><h2>Atras</h2></button>
+                <div id="btnSiguiente">
+                    <button>
+                        <h2>Siguiente</h2>
+                    </button>
+                </div>
+
             </div>
 
         </article>

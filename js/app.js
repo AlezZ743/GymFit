@@ -23,10 +23,10 @@ $(document).ready(function () {
     secciones.hide();
 
     // Relleno el campo de edades de la seccion edad
-    $("#respuestas").append("<option selected><p>8</p></option>");
+    $("#edad-seleccion").append("<option selected><p>8</p></option>");
     for (var i = 9; i <= 100; i++) {
         var rellenop = "<option>" + i + "</option>";
-        $("#respuestas").append(rellenop);
+        $("#edad-seleccion").append(rellenop);
     };
 
     // Muestro solo la seccion edad
@@ -52,8 +52,6 @@ $(document).ready(function () {
         $(secciones).eq(punteros).show();
         botonera();
     });
-
-
 
 });
 
