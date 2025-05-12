@@ -87,6 +87,7 @@ a{
     text-decoration: none;
     color: #edcd45;
     width: fit-content;
+    margin-left: 0.25%;
 }
 
 .linea_anim::after{
