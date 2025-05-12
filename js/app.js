@@ -31,6 +31,7 @@ $(document).ready(function () {
 
     // Muestro solo la seccion edad
     $(secciones).eq(0).show();
+    botonera();
 
     $("#btnSiguiente").click(function () {
         punteros = punteros + 1;
