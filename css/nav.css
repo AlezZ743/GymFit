@@ -33,6 +33,34 @@
     text-align: left;
 }
 
+.menu_item {
+    display: flex;
+    justify-items: center;
+    height: fit-content;
+    align-content: center;
+}
+
+.menu_item a{
+    color: #edcd45;
+    font-family: 'Cal Sans';
+    font-size: 25px;
+    letter-spacing: 3px;
+    justify-self:bottom;
+}
+
+.menu_item img{
+    margin-right: 1%;
+    margin-left: 7%;
+}
+
+.perro{
+    translate: 0 55px;
+}
+
+.margin_top{
+    margin-top: 5%;
+}
+
 .sub_menu{
     margin-top: 7%;
     margin-left: 7%;
@@ -47,10 +75,17 @@
 
 }
 
+a{
+    font-family: 'Cal Sans';
+    font-size: 25px;
+    letter-spacing: 3px;
+
+}
+
 .linea_anim{
     position: relative;
     text-decoration: none;
-    color: whitesmoke;
+    color: #edcd45;
     width: fit-content;
 }
 
