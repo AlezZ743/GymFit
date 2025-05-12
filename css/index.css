@@ -120,6 +120,7 @@ button.siguiente {
   width: 80%;
   margin:auto;
   margin-bottom:8%;
+  color:black;
 }
 
 /* ------------------------------------- FIN ESTILOS TEXT-HERO Y CARRUSEL */
@@ -127,8 +128,10 @@ button.siguiente {
 .custom-block-home-paddings{
     padding-top: 20px;
     background-image: url('/imagenes/lines.png');
+    width: 100%;
+    max-width: 100%;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 
 .grid-section {
