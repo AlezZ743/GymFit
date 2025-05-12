@@ -505,14 +505,28 @@ li {
 
 /* -------------------------------------------------------------- PAGINA APLICACION */
 
+.text-hero{
+    text-align: center;
+}
+
 .app-entrenamiento h2{
     padding: 8px;
     text-align: center;
 }
 
-.respuesta{
-    
+.app-entrenamiento{
+    text-align: center;
 }
 
+#btnBotonera{
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#btnAtras {
+    
+}
 
 /* -------------------------------------------------------------- FIN PAGINA APLICACION */
