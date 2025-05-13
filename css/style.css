@@ -506,27 +506,41 @@ li {
 /* -------------------------------------------------------------- PAGINA APLICACION */
 
 .text-hero{
+    padding-top: 5%;
+    text-align: center;
+    height: 30vh;
+}
+
+.app-entrenamiento{
+    align-items: center;
+    height: 40vh;
     text-align: center;
 }
 
 .app-entrenamiento h2{
-    padding: 8px;
-    text-align: center;
-}
-
-.app-entrenamiento{
+    padding: 4px;
     text-align: center;
 }
 
 #btnBotonera{
-    width: 60%;
-    margin: auto;
     display: grid;
+    margin: auto;
     grid-template-columns: 1fr 1fr;
+    padding-top: 5%;
+    width: 60%;
 }
 
 #btnAtras {
     
+}
+
+.opciones h3{
+    font-size: 300%;    
+}
+
+.opciones select{
+    font-size: 200%;
+    margin: 3% auto;
 }
 
 /* -------------------------------------------------------------- FIN PAGINA APLICACION */
