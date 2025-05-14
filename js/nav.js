@@ -159,21 +159,36 @@ document.addEventListener("DOMContentLoaded", () => {
         fill: "#ebb235",
         duration: 0.35
       });
-    } else {
-      dropdown.css("visibility", "visible");
-      gsap.to(dropdown, {
-        y: "0vh",
-        delay: 0.15,
-        duration: 0.5,
-        ease: "power1.out",
-        onStart: () => isOpen = true
-      });
-
-      gsap.to(".hamburguesa rect", {
-        fill: "white",
-        duration: 0.35
-      });
     }
+
+      else {
+        dropdown.css("visibility", "visible");
+
+        gsap.to(dropdown, {
+          y: "0vh",
+          delay: 0.15,
+          duration: 0.5,
+          ease: "power1.out",
+          onStart: () => isOpen = true,
+          onComplete: () => {
+            gsap.fromTo(".logo_text",
+              { y: 40, opacity: 0 },
+              {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                ease: "power3.out",
+                stagger: 0.05
+              }
+            );
+          }
+  });
+
+  gsap.to(".hamburguesa rect", {
+    fill: "white",
+    duration: 0.35
+  });
+}
   });
 
   // Animaciones botón
@@ -251,6 +266,46 @@ document.addEventListener("DOMContentLoaded", () => {
   // Animaciones iconos
   const iconos = document.querySelectorAll(".icon");
   console.log(iconos);
+});
 
 
+  // Animaciones logo
+
+  document.querySelector(".logo").addEventListener("mouseenter", () => {
+  gsap.to(".logo", { filter: "drop-shadow(0 0 10px #ff9900)", duration: 0.15 });
+});
+
+document.querySelector(".logo").addEventListener("mouseleave", () => {
+  gsap.to(".logo", { filter: "drop-shadow(0 0 0 #000)", duration: 0.3 });
+});
+
+const logo = document.querySelector(".logo");
+
+logo.addEventListener("mouseenter", () => {
+  logo.classList.add("hovered");
+});
+
+logo.addEventListener("mouseleave", () => {
+  logo.classList.remove("hovered");
+});
+
+
+// Animación de entrada desde abajo, con stagger
+gsap.to(".logo_text", {
+  y: 0,
+  duration: 1,
+  ease: "power3.out",
+  stagger: 0.05,
+  delay: 0.3,
+});
+
+// Glow en hover individual por letra
+document.querySelectorAll(".logo_text").forEach(letter => {
+  letter.addEventListener("mouseenter", () => {
+    letter.style.filter = "drop-shadow(0 0 10px #ffbb00)";
+  });
+
+  letter.addEventListener("mouseleave", () => {
+    letter.style.filter = "drop-shadow(0 0 0 transparent)";
+  });
 });
