@@ -21,7 +21,14 @@ $(document).ready(function () {
         ejercicioappend = '<h3>' + ejerciciosel + '</h3>';
 
         ejercicioappend = `<h3 data-ejercicio="${ejerciciosel}">${ejerciciosel}</h3>`;
+
+        temporal=$(`.boton[data-ejercicio="${ejerciciosel}"]`)
+
+        console.log("temporal=", temporal);
+
         console.log(ejercicioappend);
+
+        ejercicioappend = temporal;
 
         $("#mis-ejercicios").append(ejercicioappend);
 
