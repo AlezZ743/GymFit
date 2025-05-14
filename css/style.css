@@ -505,28 +505,48 @@ li {
 
 /* -------------------------------------------------------------- PAGINA APLICACION */
 
-.text-hero{
-    text-align: center;
-}
-
-.app-entrenamiento h2{
-    padding: 8px;
-    text-align: center;
-}
-
-.app-entrenamiento{
-    text-align: center;
-}
-
-#btnBotonera{
-    width: 60%;
+.aplicacion-main{
     margin: auto;
+    width: 90%;
+}
+
+.tabla h2{
+    color: black;
+}
+
+.text-hero{
+    margin: 5% auto;
+    padding: 4%;
+    text-align: center;
+    width: 80%;
+}
+
+.tabla{
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    text-align: center;
+}
+
+#botones-ejercicios{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-#btnAtras {
-    
+.boton{
+    margin: 2%;
+}
+
+.ico-ejercicio{
+    padding: 2%;
+}
+
+.ico-ejercicio img{
+    padding: 2%;
+}
+
+.ico-ejercicio h3{
+    padding: 2%;
 }
 
 /* -------------------------------------------------------------- FIN PAGINA APLICACION */

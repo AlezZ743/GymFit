@@ -1,57 +1,50 @@
 $(document).ready(function () {
 
-    let punteros = 0;
-    const secciones = $(".aplicacion-main .app-entrenamiento section");
+    let puntero = 0;
+    const secciones = $("#botones-ejercicios .boton");
+    const h3_ejercicios = $("#mis-ejercicios h3");
     const totalsecciones = secciones.length;
 
+    console.log("Secciones: ");
     console.log(secciones);
+    console.log("Numero de secciones: ")
     console.log(totalsecciones);
 
-    // Funciones Globales
-    function botonera() {
-        if (punteros == 0) {
-            $("#btnAtras").hide();
-        };
+    console.log("h3 en ejercicios");
 
-        if (punteros != 0) {
-            $("#btnAtras").show();
-        };
+    // Comprueba si se pulsa un boton
+    $(secciones).click(function () {
 
-    };
+        // Ocultamos el boton
+        $(this).hide();
 
-    // Oculto todas la secciones
-    secciones.hide();
+        // Copiamos el h3 del boton y lo pego en la parte de la tabla
+        // de mis ejercicios
 
-    // Relleno el campo de edades de la seccion edad
-    $("#edad-seleccion").append("<option selected><p>8</p></option>");
-    for (var i = 9; i <= 100; i++) {
-        var rellenop = "<option>" + i + "</option>";
-        $("#edad-seleccion").append(rellenop);
-    };
+        $("#mis-ejercicios").append($(this).children("h3"));
 
-    // Muestro solo la seccion edad
-    $(secciones).eq(0).show();
-    botonera();
-
-    $("#btnSiguiente").click(function () {
-        punteros = punteros + 1;
-        console.log(punteros);
-        console.log("Boton Siguiente");
-
-        $(secciones).eq(punteros - 1).hide();
-        $(secciones).eq(punteros).show();
-        botonera();
     });
 
-    $("#btnAtras").click(function () {
-        punteros = punteros - 1;
-        console.log(punteros);
-        console.log("Boton Atras");
+    $(h3_ejercicios).click(function () {
 
-        $(secciones).eq(punteros + 1).hide();
-        $(secciones).eq(punteros).show();
-        botonera();
+        // Oculto el ejercicio seleccionado
+        $(this).hide();
+
+        // vuelvo a activar el boton del ejercicio correspondiente
+        for (var i = 0; i <= totalsecciones; i++) {
+            if ($(secciones(i)).children("h3") == $(this.children("h3"))) {
+                puntero = i;
+            };
+        };
+        secciones(puntero).show();
+
+        console.log("Has hecho click en: ");
+        console.log(puntero);
+
     });
+
+    // preparar html y js para buscar nombre correspondiente al elemento seleccionado
+    // y mostrarle de nuevo
 
 });
 

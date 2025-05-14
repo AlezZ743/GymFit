@@ -54,85 +54,69 @@
     </header>
 
     <main class="aplicacion-main">
-        <article class="text-hero hero-text">
-            <h1>Entrenamiento Personalizado</h1>
-        </article>
+        <div class="hero-text text-hero">
+            <h1>
+                Entrenamiento Personal
+            </h1>
+        </div>
 
-        <article class="app-entrenamiento">
-            <section class="edad">
-                <label for="edad-seleccion">
-                    <h3>Edad:</h3>
-                </label>
-                <select id="edad-seleccion">
-                </select>
-            </section>
-
-            <section class="genero">
-                <label for="genero-seleccion">
-                    <h3>Género</h3>
-                </label>
-                <select id="genero-seleccion">
-                    <option selected>
-                        <p>Mujer</p>
-                    </option>
-                    <option>
-                        <p>Hombre</p>
-                    </option>
-                    <option>
-                        <p>Trans Hombre</p>
-                    </option>
-                    <option>
-                        <p>Trans Mujer</p>
-                    </option>
-                    <option>
-                        <p>No Binario</p>
-                    </option>
-                    <option>
-                        <p>Indeterminado</p>
-                    </option>
-                </select>
-            </section>
-
-            <section class="objetivo">
-                <label for="objetivo-seleccion">
-                    <h3>Objetivo del Entrenamiento: </h3>
-                </label>
-                <select id="objetivo-seleccion">
-                    <option selected>
-                        <p>Quema Grasa</p>
-                    </option>
-                    <option value="">
-                        <p>Operacion bikini</p>
-                    </option>
-                    <option value="">
-                        <p>Quiero estar buena/o y no se como</p>
-                    </option>
-                    <option value="">
-                        <p>Me voy a hacer pro</p>
-                    </option>
-                    <option value="">
-                        <p>Mama, voy a ser futbolista</p>
-                    </option>
-                </select>
-            </section>
-
-            <div id="btnBotonera">
-                <div id="btnAtras">
-                    <button>
-                        <h2>Atras</h2>
+        <div class="tabla">
+            <div class="tabla-ejercicios">
+                <h2>Ejercicios Disponibles</h2>
+                <div id="botones-ejercicios">
+                    <button class="boton" boton="spining">
+                        <div class="ico-ejercicio">
+                            <img src="https://picsum.photos/50/50" alt="">
+                        </div>
+                        <h3>Spining</h3>
                     </button>
-                </div>
 
-                <div id="btnSiguiente">
-                    <button>
-                        <h2>Siguiente</h2>
+                    <button class="boton" name="crossfit">
+                        <div class="ico-ejercicio">
+                            <img src="https://picsum.photos/50/50" alt="">
+                        </div>
+                        <h3>Crossfit</h3>
                     </button>
-                </div>
 
+                    <button class="boton" name="curl">
+                        <div class="ico-ejercicio">
+                            <img src="https://picsum.photos/50/50" alt="">
+                        </div>
+                        <h3>Curl</h3>
+                    </button>
+
+                    <button class="boton" name="press-banca">
+                        <div class="ico-ejercicio">
+                            <img src="https://picsum.photos/50/50" alt="">
+                        </div>
+                        <h3>Press de Banca</h3>
+                    </button>
+
+                    <button class="boton" name="sentadillas">
+                        <div class="ico-ejercicio">
+                            <img src="https://picsum.photos/50/50" alt="">
+                        </div>
+                        <h3>Sentadillas</h3>
+                    </button>
+
+                    <button class="boton" name="abdominales">
+                        <div class="ico-ejercicio">
+                            <img src="https://picsum.photos/50/50" alt="" data-ejercicio="abdominales">
+                        </div>
+                        <h3>Abdominales</h3>
+                    </button>
+
+                </div>
             </div>
 
-        </article>
+            <div class="ejercicios-mios">
+                <h2>Mis Ejercicios</h2>
+                <div id="mis-ejercicios">
 
+                </div>
+            </div>
+
+        </div>
     </main>
 
     <aside>
