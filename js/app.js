@@ -2,55 +2,63 @@ $(document).ready(function () {
 
     let puntero = 0;
     const secciones = $("#botones-ejercicios .boton");
-    const totalsecciones = secciones.length;
-    var h3_ejercicios = $("#mis-ejercicios h3");
 
-    console.log("Secciones: ");
-    console.log(secciones);
+    console.log('secciones=', secciones);
+
+    const totalsecciones = secciones.length;
+    var temporal;
+
+    console.log("html Cargado con exito");
+    console.log("Secciones: ", secciones);
     console.log("Numero de secciones: ")
     console.log(totalsecciones);
 
-    console.log("h3 en ejercicios");
-
     // Comprueba si se pulsa un boton
-    $(secciones).click(function () {
-        
+    $('#botones-ejercicios .boton').click(function () {
+
+        ejerciciosel = $(this).attr("data-ejercicio");
+
+        ejercicioappend = '<h3>' + ejerciciosel + '</h3>';
+
+        ejercicioappend = `<h3 data-ejercicio="${ejerciciosel}">${ejerciciosel}</h3>`;
+        console.log(ejercicioappend);
+
+        $("#mis-ejercicios").append(ejercicioappend);
+
         // Ocultamos el boton
         $(this).hide();
 
-        // Copiamos el h3 del boton y lo pego en la parte de la tabla
-        // de mis ejercicios
-
-        $("#mis-ejercicios").append($(this).children("h3"));
-
-        // actualizamos variable con los h3
-        
-        h3_ejercicios = $("#mis-ejercicios h3");
-
-        //$("#mis-ejercicios").append($(this).children("*"));
-
     });
 
-    $(h3_ejercicios).click(function () {
-        
+    $(document).on('click', '#mis-ejercicios  h3', function () {
+
         // Busco el boton correspondiente en la tabla de ejercicios
         console.log("ejercicio pulsado");
 
         for (var i = 0; i <= totalsecciones; i++) {
             console.log("Buscando boton");
+
             // Si el boton es el buscado, lo muestro
 
-            if (alert($(this).attr("data-ejercicio")) == $(secciones(i).alert("data-ejercicio"))) {
-                console.log("boton encontrado");
+            if ($(this).attr("data-ejercicio") == secciones.eq(i).attr("data-ejercicio")) {
+
+                console.log('i=', secciones.eq(i).attr("data-ejercicio"));
+
                 console.log("i = " + i);
 
-                i = totalsecciones + 1;
-                $(secciones(i)).show();
-            }
-        }
+                // Muestro otra vez el boton oculto
 
-        // Oculto el ejercicio seleccionado
-        $(this).hide();
+                secciones.eq(i).show();
+
+                // Oculto el ejercicio seleccionado
+                $(this).hide();
+
+                // Salgo del bucle
+
+                i = totalsecciones + 1;
+            };
+        };
+
     });
 
     // preparar html y js para buscar nombre correspondiente al elemento seleccionado
