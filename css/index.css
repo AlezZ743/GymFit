@@ -127,7 +127,7 @@ button.siguiente {
 
 .custom-block-home-paddings{
     padding-top: 20px;
-    background-image: url('/imagenes/lines.png');
+    background-image: url('../imagenes/lines.png');
     width: 100%;
     max-width: 100%;
     background-repeat: no-repeat;

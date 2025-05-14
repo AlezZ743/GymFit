@@ -1,57 +1,60 @@
 $(document).ready(function () {
 
-    let punteros = 0;
-    const secciones = $(".aplicacion-main .app-entrenamiento section");
+    let puntero = 0;
+    const secciones = $("#botones-ejercicios .boton");
     const totalsecciones = secciones.length;
+    var h3_ejercicios = $("#mis-ejercicios h3");
 
+    console.log("Secciones: ");
     console.log(secciones);
+    console.log("Numero de secciones: ")
     console.log(totalsecciones);
 
-    // Funciones Globales
-    function botonera() {
-        if (punteros == 0) {
-            $("#btnAtras").hide();
-        };
+    console.log("h3 en ejercicios");
 
-        if (punteros != 0) {
-            $("#btnAtras").show();
-        };
+    // Comprueba si se pulsa un boton
+    $(secciones).click(function () {
+        
+        // Ocultamos el boton
+        $(this).hide();
 
-    };
+        // Copiamos el h3 del boton y lo pego en la parte de la tabla
+        // de mis ejercicios
 
-    // Oculto todas la secciones
-    secciones.hide();
+        $("#mis-ejercicios").append($(this).children("h3"));
 
-    // Relleno el campo de edades de la seccion edad
-    $("#edad-seleccion").append("<option selected><p>8</p></option>");
-    for (var i = 9; i <= 100; i++) {
-        var rellenop = "<option>" + i + "</option>";
-        $("#edad-seleccion").append(rellenop);
-    };
+        // actualizamos variable con los h3
+        
+        h3_ejercicios = $("#mis-ejercicios h3");
 
-    // Muestro solo la seccion edad
-    $(secciones).eq(0).show();
-    botonera();
+        //$("#mis-ejercicios").append($(this).children("*"));
 
-    $("#btnSiguiente").click(function () {
-        punteros = punteros + 1;
-        console.log(punteros);
-        console.log("Boton Siguiente");
-
-        $(secciones).eq(punteros - 1).hide();
-        $(secciones).eq(punteros).show();
-        botonera();
     });
 
-    $("#btnAtras").click(function () {
-        punteros = punteros - 1;
-        console.log(punteros);
-        console.log("Boton Atras");
+    $(h3_ejercicios).click(function () {
+        
+        // Busco el boton correspondiente en la tabla de ejercicios
+        console.log("ejercicio pulsado");
 
-        $(secciones).eq(punteros + 1).hide();
-        $(secciones).eq(punteros).show();
-        botonera();
+        for (var i = 0; i <= totalsecciones; i++) {
+            console.log("Buscando boton");
+            // Si el boton es el buscado, lo muestro
+
+            if (alert($(this).attr("data-ejercicio")) == $(secciones(i).alert("data-ejercicio"))) {
+                console.log("boton encontrado");
+                console.log("i = " + i);
+
+                i = totalsecciones + 1;
+                $(secciones(i)).show();
+            }
+        }
+
+        // Oculto el ejercicio seleccionado
+        $(this).hide();
     });
+
+    // preparar html y js para buscar nombre correspondiente al elemento seleccionado
+    // y mostrarle de nuevo
 
 });
 
