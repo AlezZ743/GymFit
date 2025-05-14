@@ -121,7 +121,8 @@ a{
     left: 0;
     width: 100%;
     height: 100vh;
-    background: #131314;
+    background: #131314ec;
+      backdrop-filter: blur(10px);
     visibility: hidden;
     transform: translateY(-100vh);
     z-index: 999;
@@ -139,13 +140,14 @@ a{
     transition: all 0.3s ease;
   }
 
+
+  /*---------------------------Animaciones para el logo-------------------------------------*/
+
 .menu_logo{
     position: fixed;
     top: 20%;
     right: 10%;
     text-align: center;
-
-    
 }
 
 .menu_logo img{
@@ -155,6 +157,8 @@ a{
 .logo {
   transition: filter 0.3s ease;
   filter: drop-shadow(0 0 0 transparent);
+  opacity: 0;
+  transform: translateY(40px);
 }
 
 .logo.hovered {
@@ -167,10 +171,12 @@ a{
   transform: translateY(40px);
   transition: filter 0.3s ease;
   filter: drop-shadow(0 0 0 transparent);
-  color: #edcd45;
+  color: #ebdf35;
+  font-family: 'Cal Sans';
   font-size: 3rem;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 10px;
+  cursor: default;
 }
 
 
