@@ -142,27 +142,44 @@ document.addEventListener("DOMContentLoaded", () => {
     const dropdown = $(".dropdown");
 
     console.log("esto funciona");
-
-    if (isOpen) {
-      gsap.to(dropdown, {
-        y: "-100vh",
-        delay: 0.15,
-        duration: 0.5,
-        ease: "power1.in",
-        onComplete: () => {
-          dropdown.css("visibility", "hidden");
-          isOpen = false;
-        }
+if (isOpen) {
+  // Recoge el menú
+  gsap.to(dropdown, {
+    y: "-100vh",
+    delay: 0.15,
+    duration: 0.5,
+    ease: "power1.in",
+    onComplete: () => {
+      // Una vez cerrado, oculta las letras sin animación
+      gsap.set(".logo_text", {
+        y: 40,
+        opacity: 0
       });
 
-      gsap.to(".hamburguesa rect", {
-        fill: "#ebb235",
-        duration: 0.35
-      });
+      dropdown.css("visibility", "hidden");
+      isOpen = false;
+
+        gsap.set(".logo", { y: 40, opacity: 0 });
+
+  dropdown.css("visibility", "hidden");
+  isOpen = false;
     }
+  });
+
+  gsap.to(".hamburguesa rect", {
+    fill: "#ebb235",
+    duration: 0.35
+  });
+}
+
 
       else {
         dropdown.css("visibility", "visible");
+
+
+  // Aparece el logo desde abajo
+
+
 
         gsap.to(dropdown, {
           y: "0vh",
@@ -181,7 +198,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 stagger: 0.05
               }
             );
-          }
+
+              gsap.fromTo(".logo",
+    { y: 40, opacity: 0 },
+    { y: 0, opacity: 1, duration: 0.6, ease: "power3.out" }
+  );
+}
   });
 
   gsap.to(".hamburguesa rect", {
