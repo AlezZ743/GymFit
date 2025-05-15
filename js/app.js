@@ -15,61 +15,19 @@ $(document).ready(function () {
 
     // Comprueba si se pulsa un boton
     $('#botones-ejercicios .boton').click(function () {
-
-        ejerciciosel = $(this).attr("data-ejercicio");
-
-        ejercicioappend = '<h3>' + ejerciciosel + '</h3>';
-
-        ejercicioappend = `<h3 data-ejercicio="${ejerciciosel}">${ejerciciosel}</h3>`;
-
-        temporal=$(`.boton[data-ejercicio="${ejerciciosel}"]`)
-
-        console.log("temporal=", temporal);
-
-        console.log(ejercicioappend);
-
-        ejercicioappend = temporal;
-
-        $("#mis-ejercicios").append(ejercicioappend);
-
-        // Ocultamos el boton
-        $(this).hide();
-
+        let ejercicioSeleccionado = $(this).clone(); // Clona el objeto completo
+        $("#mis-ejercicios").append(ejercicioSeleccionado); // Lo añade a la zona de ejercicios
+        $(this).hide(); // Oculta el botón original
     });
 
-    $(document).on('click', '#mis-ejercicios  h3', function () {
+    $(document).on('click', '#mis-ejercicios .boton', function () {
+        let ejercicioSeleccionado = $(this).attr("data-ejercicio");
 
-        // Busco el boton correspondiente en la tabla de ejercicios
-        console.log("ejercicio pulsado");
+        // Buscar el botón original en la lista de ejercicios y mostrarlo
+        $(`#botones-ejercicios .boton[data-ejercicio="${ejercicioSeleccionado}"]`).show();
 
-        for (var i = 0; i <= totalsecciones; i++) {
-            console.log("Buscando boton");
-
-            // Si el boton es el buscado, lo muestro
-
-            if ($(this).attr("data-ejercicio") == secciones.eq(i).attr("data-ejercicio")) {
-
-                console.log('i=', secciones.eq(i).attr("data-ejercicio"));
-
-                console.log("i = " + i);
-
-                // Muestro otra vez el boton oculto
-
-                secciones.eq(i).show();
-
-                // Oculto el ejercicio seleccionado
-                $(this).hide();
-
-                // Salgo del bucle
-
-                i = totalsecciones + 1;
-            };
-        };
-
+        // Ocultar el botón en la zona de 'Mis Ejercicios'
+        $(this).remove();
     });
-
-    // preparar html y js para buscar nombre correspondiente al elemento seleccionado
-    // y mostrarle de nuevo
-
 });
 
