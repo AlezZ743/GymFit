@@ -1,18 +1,5 @@
 $(document).ready(function () {
 
-    let puntero = 0;
-    const secciones = $("#botones-ejercicios .boton");
-
-    console.log('secciones=', secciones);
-
-    const totalsecciones = secciones.length;
-    var temporal;
-
-    console.log("html Cargado con exito");
-    console.log("Secciones: ", secciones);
-    console.log("Numero de secciones: ")
-    console.log(totalsecciones);
-
     // Comprueba si se pulsa un boton
     $('#botones-ejercicios .boton').click(function () {
         let ejercicioSeleccionado = $(this).clone(); // Clona el objeto completo
