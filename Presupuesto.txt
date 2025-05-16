@@ -1,6 +1,0 @@
-Concepto        Unidades    Precio      Subtotal
-Horas           80          30 €         2400€
-Hosting         1           50 €/mes     50€
-Mantenimiento   1           100 €/mes    100€
-
-
