@@ -16,13 +16,15 @@
 }
 
 @font-face {
-    font-family: 'Bebas Neue';
-    src: url('/fonts/BebasNeue-Regular.woff2') format('woff2'),
-        url('/fonts/BebasNeue-Regular.woff') format('woff');
+    font-family: 'Lexend Deca';
+    src: url('../fonts/LexendDeca-Regular.woff2') format('woff2'),
+        url('../fonts/LexendDeca-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
+
 
 
 /*Estilos para títulos*/
@@ -74,7 +76,6 @@ h1, h2{
     color: black;
     font-size: 50px;
     text-align: center;
-    padding-top: 100px;
     margin-bottom: 5%;
 }
 
@@ -289,20 +290,15 @@ h1, h2{
 
 /*Pagina sobre nosotros*/
 
-.somos {
-    height: 600px;
-}
+
 
 .hero-somos {
-    height: 100%;
+    height: 50vh;
     background-image: url('../imagenes\ de\ prueba/conocenos-img-ppal.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding-left: 300px;
 }
 
 .unicos {
@@ -315,7 +311,6 @@ h1, h2{
     font-size: 80px;
     font-weight: bold;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-    margin: 0;
 }
 
 .nosotros {
@@ -325,6 +320,7 @@ h1, h2{
 .hero-nosotros {
     width: 100%;
     height: 100%;
+    
 }
 
 .hero-text-nosotros h1 {
@@ -536,7 +532,9 @@ h1, h2{
 /* ------------------------------------------------------ HEADER */
 
 .header-servicios .somos {
-    height: 600px;
+    height: 50vh;
+    text-align: center;
+    margin-bottom: 5%;
 }
 
 .header-servicios .hero-somos {
@@ -547,7 +545,7 @@ h1, h2{
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-around;
 }
 
 
@@ -592,6 +590,7 @@ h1, h2{
     text-align: center;
     width: 80%;
     margin: auto;
+    margin-bottom: 5%;;
 }
 
 .estilo1 .textito {
@@ -600,9 +599,17 @@ h1, h2{
     padding: 8px;
 }
 
+
+hr{
+    width: 70%;
+    justify-self: center;
+    border: 2px solid #00000072;
+}
+
 .estilo1 .fotitos {
     margin: auto;
     padding: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); 
 }
 
 .estilo1 .fotitos img {
@@ -610,9 +617,18 @@ h1, h2{
 }
 
 .estilo1 p {
-    font-size: 120%;
+    font-size: 150%;
+    font-family: 'Lexend Deca';
+    text-align: left;
 }
 
+.fullwidth{
+    width: 100%;
+    background-image: url(../imagenes/test1.jpg);
+    background-size: cover;
+    padding-block: 20px;
+    margin-bottom: 5%;
+}
 
 .estilo2 {
     display: grid;
@@ -630,8 +646,8 @@ h1, h2{
 }
 
 .estilo2 .fotitos {
-    margin: auto;
-    padding: 8px;
+    border: 10px solid #ecca4e;
+    box-shadow: 0px 0px 20px rgba(250, 215, 22, 0.5);    
 }
 
 .estilo2 .fotitos img {
@@ -639,7 +655,10 @@ h1, h2{
 }
 
 .estilo2 p {
-    font-size: 120%;
+    font-size: 150%;
+    font-family: 'Lexend Deca';
+    color: whitesmoke;
+    text-align: right;
 }
 
 .mission-section {
