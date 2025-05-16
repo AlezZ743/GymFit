@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./GymFit/css/style.css">
+    <link rel="stylesheet" href="./GymFit/css/nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+</head>
+
+<body>
+    <header>
+        <!-- ESPACIO PARA MENU Y LOGO  -->
+        <nav class="menu_navegador">
+            <button type="button" id="boton">
+                <svg class="hamburguesa" height="30" viewBox="0 0 40 30" xmlns="http://www.w3.org/2000/svg">
+                    <rect class="line arriba" y="0" width="40" height="4" rx="2" />
+                    <rect class="line medio" y="13" width="40" height="4" rx="2" />
+                    <rect class="line abajo" y="26" width="40" height="4" rx="2" />
+                </svg>
+            </button>
+
+            <div class="dropdown">
+                <div class="dropin">
+                    <h2 id="nav_menu">
+                        Menú
+                    </h2>
+
+                    <div class="sub_menu">
+                        <a href="./index.html" class="linea_anim">Inicio</a>
+                        <br>
+                        <br>
+                        <a href="./unete.html" class="linea_anim">Únete</a>
+                        <br>
+                        <br>
+                        <a href="./Servicios.html" class="linea_anim">Nuestros Servicios</a>
+                        <br>
+                        <br>
+                        <a href="aplicacion.html" class="linea_anim">Creador de entrenamientos</a>
+                        <!-- Añadir tag de Nuevo -->
+                        <br>
+                        <br>
+                        <a href="./Nosotros.html" class="linea_anim">Sobre Nosotros</a>
+                        <br>
+                        <br>
+                        <a href="./contacto.html" class="linea_anim">Contacto</a>
+                    </div>
+
+
+                </div>
+            </div>
+        </nav>
+        <!-- FIN ESPACIO PARA MENU Y LOGO -->
+    </header>
+    <section class="contacto">
+        <div class="hero">
+            <div class="hero-text">
+                <h1>UNETE</h1>
+            </div>
+        </div>
+    </section>
+    <section class="mensaje">
+        <div class="hero-mensaje">
+            <div class="hero-text-mensaje">
+                <h1>Mándanos un mensaje</h1>
+                <br>
+                <br>
+                <h2 class="ask">
+                    ¡Estamos deseando escuchar lo que tienes que decir!
+                </h2>
+            </div>
+        </div>
+    </section>
+    <section class="formulario">
+        <div class="hero-formulario">
+            <div class="hero-text-formulario">
+                <h1>FORMULARIO DE CONTACTO</h1>
+                <br>
+                <br>
+                <form action="contacto.html" method="POST" class="formulario-contacto">
+                    <label for="asunto">Asunto</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option class="black" value="El gordo"> Gimnasio El gordo</option>
+                        <option class="black" value="Villapene"> Gimnasio Villapene</option>
+                        <option class="black" value="Guarromán"> Gimnasio Guarromán</option>
+                        <option class="black" value="Parderrubias"> Gimnasio Parderrubias
+                        </option>
+                    </select>
+                    <br>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br>
+                    <label for="nombre">Apellido:</label>
+                    <input type="text" id="nombre" name="apellido" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="mensaje">Comentarios</label>
+                    <textarea id="mensaje" name="comentario" rows="4" required></textarea>
+                    <br>
+                    <div class="inline">
+                        <input id="check" type="checkbox" name="acepta" required>
+                        <label for="checkbox">Acepto la política de privacidad</label>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+            <footer class="footer">
+        <!-- Barra superior con iconos -->
+        <div class="footer-top">
+        </div>
+
+        <!-- Pie inferior con derechos de autor -->
+        <div class="footer-bottom">
+            <p>© Dreamfit 2025 </p>
+            <div class="social-icons-grid">
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/home?lang=es" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.tiktok.com/es/" target="_blank"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+        </div>
+    </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+        <script src="./js/nav.js"></script>
+</body>
+
+</html>
