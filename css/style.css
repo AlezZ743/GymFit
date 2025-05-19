@@ -187,6 +187,8 @@ h1, h2{
 .formulario-contacto label[for="acepta"] {
     font-size: 14px;
     color: black;
+    display: inline-block;
+    margin-left: 5px;
 }
 
 /* Estilo para el botón "Enviar" */
@@ -203,6 +205,30 @@ h1, h2{
     max-width: 100px;
     width: 100%;
 }
+
+/* --------------------------- PRUEBA --------------------------------- */
+
+.inline {
+    display: flex;
+    align-items: center;
+}
+
+.inline input[type="checkbox"] {
+    margin-right: 0;
+    padding: 0;
+    width: auto;
+}
+
+.inline label {
+    margin-left: 0;
+    padding: 0;
+}
+
+.inline p{
+    color: white;
+}
+
+/* --------------------------- FIN PRUEBA ---------------------------- */
 
 /* Efecto hover para el botón */
 .formulario-contacto button:hover {
