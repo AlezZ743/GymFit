@@ -51,7 +51,7 @@ h1, h2{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 300px;
+    padding-left: 25%;
 
 }
 
@@ -100,7 +100,7 @@ h1, h2{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 300px;
+    padding-left: 25%;
 }
 
 .hero-text-formulario h1 {
@@ -431,7 +431,7 @@ h1, h2{
 }
 
 .hero-mensaje-unete {
-    width: 100%
+    width: 100%;
     height: 100%;
 }
 
