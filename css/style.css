@@ -44,7 +44,8 @@ h1, h2{
 .hero {
     /*width: 100%;*/
     height: 100%;
-    background-image: url('../imagenes\ de\ prueba/contactar-formulario-bg2.jpg');
+    background-image: url('../imagenes/contacto_banner.jpg');
+    backdrop-filter: ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -131,10 +132,15 @@ h1, h2{
     background-repeat: repeat-x;
 }
 
+.black {
+    color: black;
+}
+
 .formulario-contacto {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    font-family: 'Lexend Deca';
 }
 
 /* Estilo para los labels */
@@ -142,6 +148,7 @@ h1, h2{
     font-weight: bold;
     color: white;
     font-size: 16px;
+        font-family: 'Lexend Deca';
 }
 
 /* Estilo para los inputs, textarea y select */
@@ -158,6 +165,8 @@ h1, h2{
     background-color: transparent;
     color: white;
     outline: none;
+        font-family: 'Lexend Deca';
+    accent-color: #ebb235; 
 }
 
 /* Estilo personalizado para el select */
@@ -170,12 +179,14 @@ h1, h2{
     padding-right: 30px;
     width: 100%;
     max-width: 520px;
+        font-family: 'Lexend Deca';
 }
 
 /* Estilo para el textarea */
 .formulario-contacto textarea {
     resize: vertical;
     min-height: 100px;
+        font-family: 'Lexend Deca';
 }
 
 /* Estilo para el checkbox */
@@ -407,7 +418,7 @@ h1, h2{
 .hero-unete {
     /*width: 100%;*/
     height: 100%;
-    background-image: url('../imagenes\ de\ prueba/contactar-formulario-bg2.jpg');
+    background-image: url('../imagenes/unete_portada.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -437,7 +448,7 @@ h1, h2{
 
 .hero-text-mensaje-unete h1 {
     color: black;
-    font-size: 50px;
+    font-size: 25px;
     text-align: center;
     padding-top: 100px;
     margin-bottom: 5%;
@@ -448,6 +459,7 @@ h1, h2{
     justify-content: space-around;
     gap: 20px;
     margin-top: 20px;
+    margin-bottom: 10%;
 }
 
 .tarjeta-card {
@@ -808,12 +820,13 @@ li {
 .tabla-ejercicios {
     border: double 4px black;
     border-radius: 100px;
+    background-color: #222222e7;
+    margin-right: 10%;
 }
 
 .tabla-ejercicios h2 {
         border-bottom: solid 4px #ecca4e;
     border-radius: 40px;
-
     color: #ecca4e;
     margin: 2%;
     margin-top: 15%;
@@ -833,6 +846,7 @@ li {
 .ejercicios-mios {
     border: double 4px black;
     border-radius: 100px;
+    background-color: #222222e7;
 }
 
 .ejercicios-mios h2 {
