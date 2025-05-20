@@ -115,6 +115,10 @@ button.siguiente {
 
 .subtexto{
   margin-block: 2%;
+  border-bottom: #222 solid 3px;
+  width: 65%;
+  margin-inline: auto;
+  padding-bottom: 10px;
 }
 
 .cont_subtexto{
@@ -133,7 +137,14 @@ button.siguiente {
     max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+    font-size: 25px;
 }
+
+.boton{
+    background-color: #1a191592;
+
+}
+
 
 .grid-section {
     display: grid;
@@ -172,7 +183,6 @@ button.siguiente {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     text-align: center;
   }
   
