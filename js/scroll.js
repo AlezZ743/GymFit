@@ -46,5 +46,21 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       });
     });
+
+
+    // Animar h1 dentro de main
+    gsap.utils.toArray('section').forEach(section => {
+      gsap.from(section, {
+        opacity: 0,
+        y: 40,
+        duration: 0.7,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: section,
+          start: "top 85%",
+          toggleActions: "play none none none"
+        }
+      });
+    });
 }
 });
