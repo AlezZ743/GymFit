@@ -455,14 +455,8 @@ h1, h2{
     display: flex;
     justify-content: space-around;
     gap: 20px;
-<<<<<<< HEAD
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-bottom: 5%;
-=======
     margin-top: 20px;
     margin-bottom: 10%;
->>>>>>> 7058da077d0e1ba423b7628eea62bf8703874c01
 }
 
 .tarjeta-card {
