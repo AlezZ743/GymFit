@@ -457,14 +457,21 @@ h1, h2{
     gap: 20px;
     margin-top: 20px;
     margin-bottom: 10%;
+    font-family: 'Lexend Deca';
+    background-color: #f3f2f2;
 }
 
 .tarjeta-card {
-    background-color: red;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    
+    background-color: rgba(7, 4, 4, 0.86);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
     text-align: center;
-    width: 300px;
+    width: 350px;
+    position: relative;
+    transition: transform 0.2s ease; 
+}
+
+.tarjeta-card:hover {
+    transform: scale(1.08); 
 }
 
 /* Encabezado de la tarjeta */
@@ -473,7 +480,6 @@ h1, h2{
     overflow: hidden;
     width: 100%;
     height: 150px;
-
 }
 
 .tarjeta-card-header img {
@@ -497,6 +503,7 @@ h1, h2{
 .tarjeta-card-body {
     margin-top: 20px;
     text-align: left;
+    
 }
 
 .tarjeta-card-price {
@@ -522,6 +529,8 @@ h1, h2{
     list-style: none;
     margin: 20px 0;
     padding: 20px;
+    height: 200px;  
+
 }
 
 .tarjeta-card-features li {
@@ -530,6 +539,7 @@ h1, h2{
     color: black;
     display: flex;
     text-align: left;
+    color: whitesmoke;
 }
 
 .tarjeta-card-features li::before {
@@ -541,50 +551,67 @@ h1, h2{
 /* Pie de la tarjeta */
 .tarjeta-card-footer {
     margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tarjeta-card-button-comfort {
-    background-color: #ecca4e; /* Botón amarillo claro */
-    color: white;
+    background-color: #dfdfdf; /* Botón amarillo claro */
+    color: #2d2d2d;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.tarjeta-card-button-premium {
-    background-color: #ecca4e;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.tarjeta-card-button-ultimate {
-    background-color: #ecca4e;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.8s ease;
 }
 
-.tarjeta-card-button:hover {
-    background-color: #d4af37;
+.tarjeta-card-button-comfort:hover {
+      transform: scale(1.15);
+      background-color: #ecca4e;
+    }
+
+.tarjeta-card-button-premium {
+    background-color: #dfdfdf;;
+    color: #2d2d2d;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.8s ease;
+}
+
+.tarjeta-card-button-premium:hover {
+      transform: scale(1.15);
+      background-color: #ecca4e;
+    }
+
+.tarjeta-card-button-ultimate {
+    background-color: #dfdfdf;;
+    color: #2d2d2d;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.8s ease;
+}
+
+.tarjeta-card-button-ultimate:hover {
+      transform: scale(1.15);
+      background-color: #ecca4e;
 }
 
 .tarjeta-card-enrollment-fee {
-    color: #666;
+    color: #c0c0c0;
     font-size: 14px;
     margin-top: 20px;
+    padding-bottom: 20px; 
 }
 
 
