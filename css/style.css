@@ -327,7 +327,27 @@ h1, h2{
 
 /*Pagina sobre nosotros*/
 
+.hero-text-nosotros p, li{
+    font-family: 'Lexend Deca';
+}
 
+.subparrafo{
+    font-family: 'Lexend Deca';
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    letter-spacing: 5px;
+    width: 75%;
+    margin: auto;
+}
+
+.uppercase{
+    font-size: 35px;
+}
+
+.decides p{
+    font-family: 'Lexend Deca';
+}   
 
 .hero-somos {
     align-items: center;
@@ -408,6 +428,7 @@ h1, h2{
     padding-left: 14.5%;
     padding-top: 5%;
 }
+
 /* Pagina de unete*/
 .unete {
     height: 395px;
