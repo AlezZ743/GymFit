@@ -214,8 +214,6 @@ h1, h2{
     width: 100%;
 }
 
-<<<<<<< HEAD
-=======
 .inline {
     display: flex;
     align-items: center;
@@ -236,7 +234,6 @@ h1, h2{
     color: white;
 }
 
->>>>>>> 7058da077d0e1ba423b7628eea62bf8703874c01
 /* Efecto hover para el botón */
 .formulario-contacto button:hover {
     background-color: #ebb235;
