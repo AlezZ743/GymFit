@@ -197,8 +197,6 @@ h1, h2{
 .formulario-contacto label[for="acepta"] {
     font-size: 14px;
     color: black;
-    display: inline-block;
-    margin-left: 5px;
 }
 
 /* Estilo para el botón "Enviar" */
@@ -229,7 +227,7 @@ h1, h2{
 
 .inline label {
     margin-left: 0;
-    padding: 0;
+    padding: 1%;
 }
 
 .inline p{
@@ -462,10 +460,9 @@ h1, h2{
 }
 
 .tarjeta-card {
-    background-color: white;
-    border-radius: 8px;
+    background-color: red;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    
     text-align: center;
     width: 300px;
 }
@@ -474,8 +471,9 @@ h1, h2{
 .tarjeta-card-header {
     position: relative;
     overflow: hidden;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+    width: 100%;
+    height: 150px;
+
 }
 
 .tarjeta-card-header img {
@@ -522,8 +520,8 @@ h1, h2{
 
 .tarjeta-card-features {
     list-style: none;
-    padding: 0;
     margin: 20px 0;
+    padding: 20px;
 }
 
 .tarjeta-card-features li {
@@ -545,8 +543,30 @@ h1, h2{
     margin-top: 20px;
 }
 
-.tarjeta-card-button {
+.tarjeta-card-button-comfort {
     background-color: #ecca4e; /* Botón amarillo claro */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.tarjeta-card-button-premium {
+    background-color: #ecca4e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.tarjeta-card-button-ultimate {
+    background-color: #ecca4e;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -564,7 +584,7 @@ h1, h2{
 .tarjeta-card-enrollment-fee {
     color: #666;
     font-size: 14px;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 
